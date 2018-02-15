@@ -48,7 +48,7 @@
     "jquery-ujs": "~1.2.0",
     "jquery.cookie": "~1.4.1",
     "jstz": "~1.0.7",
-    "lodash": "~4.15.0",
+    "lodash": "~4.17.5",
     "multiselect": "~0.9.12",
     "react": "^15.1.0",
     "react-bootstrap": "^0.30.0",
@@ -63,8 +63,13 @@
     "automock": true,
     "verbose": true,
     "collectCoverage": true,
-    "collectCoverageFrom": ["webpack/**/*.js", "!webpack/**/bundle*"],
-    "coverageReporters": ["lcov"],
+    "collectCoverageFrom": [
+      "webpack/**/*.js",
+      "!webpack/**/bundle*"
+    ],
+    "coverageReporters": [
+      "lcov"
+    ],
     "unmockedModulePathPatterns": [
       "react",
       "node_modules/"
