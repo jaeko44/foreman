@@ -39,7 +39,7 @@
     "c3": "^0.4.11",
     "datatables.net": "~1.10.12",
     "datatables.net-bs": "~1.10.12",
-    "diff": "~3.0.0",
+    "diff": "~3.5.0",
     "events": "^1.1.1",
     "flux": "^2.1.1",
     "ipaddr.js": "~1.2.0",
@@ -63,8 +63,13 @@
     "automock": true,
     "verbose": true,
     "collectCoverage": true,
-    "collectCoverageFrom": ["webpack/**/*.js", "!webpack/**/bundle*"],
-    "coverageReporters": ["lcov"],
+    "collectCoverageFrom": [
+      "webpack/**/*.js",
+      "!webpack/**/bundle*"
+    ],
+    "coverageReporters": [
+      "lcov"
+    ],
     "unmockedModulePathPatterns": [
       "react",
       "node_modules/"
