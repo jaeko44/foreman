@@ -52,7 +52,7 @@
     "multiselect": "~0.9.12",
     "react": "^15.1.0",
     "react-bootstrap": "^0.30.0",
-    "react-dom": "^15.1.0",
+    "react-dom": "^16.0.1",
     "select2": "~3.5.2-browserify"
   },
   "scripts": {
