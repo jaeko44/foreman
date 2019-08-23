@@ -53,7 +53,7 @@
     "react": "^15.1.0",
     "react-bootstrap": "^0.30.0",
     "react-dom": "^15.1.0",
-    "select2": "~3.5.2-browserify"
+    "select2": "~4.0.8"
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint -c .eslintrc webpack/assets/**/*.js || exit 0",
