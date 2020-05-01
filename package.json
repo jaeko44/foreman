@@ -43,7 +43,7 @@
     "events": "^1.1.1",
     "flux": "^2.1.1",
     "ipaddr.js": "~1.2.0",
-    "jquery": "~1.11.0",
+    "jquery": "~3.5.0",
     "jquery-flot": "~0.8.3",
     "jquery-ujs": "~1.2.0",
     "jquery.cookie": "~1.4.1",
@@ -53,18 +53,26 @@
     "react": "^15.1.0",
     "react-bootstrap": "^0.30.0",
     "react-dom": "^15.1.0",
-    "select2": "~3.5.2-browserify"
+    "select2": "~3.5.2-browserify",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint -c .eslintrc webpack/assets/**/*.js || exit 0",
-    "test": "node --harmony_proxies node_modules/.bin/jest"
+    "test": "node --harmony_proxies node_modules/.bin/jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "jest": {
     "automock": true,
     "verbose": true,
     "collectCoverage": true,
-    "collectCoverageFrom": ["webpack/**/*.js", "!webpack/**/bundle*"],
-    "coverageReporters": ["lcov"],
+    "collectCoverageFrom": [
+      "webpack/**/*.js",
+      "!webpack/**/bundle*"
+    ],
+    "coverageReporters": [
+      "lcov"
+    ],
     "unmockedModulePathPatterns": [
       "react",
       "node_modules/"
@@ -72,5 +80,6 @@
     "moduleNameMapper": {
       "^.+\\.(png|gif|css)$": "identity-obj-proxy"
     }
-  }
+  },
+  "snyk": true
 }
